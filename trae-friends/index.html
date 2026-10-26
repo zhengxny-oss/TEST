@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRAE Friends 见面会 · 报名中</title>
+  <meta name="description" content="与 TRAE 团队、社区伙伴和同样热爱 AI 编程的朋友们线下相聚。分享、碰撞、一起创造。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="TRAE Friends 首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="g-brand" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7C5CFF"/>
+                <stop offset="100%" stop-color="#22D3EE"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#g-brand)" d="M6 4h7l7 10V4h6v24h-7l-7-10v10H6z"/>
+          </svg>
+        </span>
+        <span class="brand-text">TRAE <em>Friends</em></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#agenda">议程</a>
+        <a href="#guests">嘉宾</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="nav-cta" href="#register">立即报名</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-a"></div>
+      <div class="blob blob-b"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="eyebrow">
+        <span class="dot"></span> 线下活动 · 名额有限 · 免费参与
+      </div>
+
+      <h1 class="hero-title">
+        TRAE <span class="grad">Friends</span><br/>
+        线下见面会
+      </h1>
+
+      <p class="hero-desc">
+        和 TRAE 团队一起聊 AI 编程、分享真实开发故事、面对面提问。
+        不管你是刚上手的新手，还是已经把 TRAE 变成主力生产力的老朋友，都欢迎来坐一坐。
+      </p>
+
+      <div class="hero-meta">
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span>2026 年 11 月 28 日 · 周六 14:00 – 17:30</span>
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>上海市 · 徐汇区 · 地铁 10 号线附近</span>
+        </div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span>限定 80 席 · 报名审核制</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#register">
+          立即报名
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="#agenda">查看议程</a>
+      </div>
+
+      <div class="counter" aria-label="距离活动开始">
+        <div class="counter-label">距离活动开始</div>
+        <div class="counter-box">
+          <div class="unit"><span id="cd-d">--</span><small>天</small></div>
+          <div class="sep">:</div>
+          <div class="unit"><span id="cd-h">--</span><small>时</small></div>
+          <div class="sep">:</div>
+          <div class="unit"><span id="cd-m">--</span><small>分</small></div>
+          <div class="sep">:</div>
+          <div class="unit"><span id="cd-s">--</span><small>秒</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">向下滚动 ↓</div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Why we meet</div>
+        <h2 class="section-title">一次关于 AI 编程的<br/>线下小聚</h2>
+        <p class="section-sub">
+          我们想听听你真的怎么用 TRAE、卡在哪里、又创造了什么好玩的东西。
+          比起台上 1 小时的单向输出，我们更看重 100 次真诚的 10 分钟对话。
+        </p>
+      </div>
+
+      <div class="cards-3">
+        <article class="card">
+          <div class="card-ico ico-1">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>独家产品资讯</h3>
+          <p>抢先了解 TRAE 接下来几个月的核心方向和路线图，现场 Q&amp;A 直接对话产品负责人。</p>
+        </article>
+        <article class="card">
+          <div class="card-ico ico-2">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>真实案例分享</h3>
+          <p>来自不同领域的开发者，聊聊他们如何把 TRAE 变成团队的生产力杠杆，踩过哪些坑。</p>
+        </article>
+        <article class="card">
+          <div class="card-ico ico-3">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <h3>周边 &amp; 茶歇</h3>
+          <p>限量周边、手冲咖啡、轻松的 networking 环节，以及一份我们精心准备的伴手礼。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AGENDA ============ -->
+  <section class="section section-alt" id="agenda">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Agenda</div>
+        <h2 class="section-title">活动议程</h2>
+        <p class="section-sub">我们会在报名结束后 1–2 天通过邮件发送具体地址和签到提醒。</p>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <div class="tl-time">14:00 – 14:20</div>
+          <div class="tl-body">
+            <h4>签到 &amp; 自由交流</h4>
+            <p>领取物料、拍一张拍立得、找个喜欢的位置落座。</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-time">14:20 – 14:40</div>
+          <div class="tl-body">
+            <h4>开场 &amp; 团队近况</h4>
+            <p>TRAE 产品负责人聊聊这半年我们在做什么、踩了哪些坑。</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-time">14:40 – 15:40</div>
+          <div class="tl-body">
+            <h4>Lightning Talks × 4</h4>
+            <p>社区朋友们的真实分享，每人 10 分钟，话题开放征集中。</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-time">15:40 – 16:10</div>
+          <div class="tl-body">
+            <h4>茶歇 &amp; 合影</h4>
+            <p>咖啡、拍照、和感兴趣的人继续聊。</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-time">16:10 – 17:00</div>
+          <div class="tl-body">
+            <h4>圆桌 &amp; 现场 Q&amp;A</h4>
+            <p>产品、设计、工程三位核心同学一起坐台，你可以问任何问题。</p>
+          </div>
+        </li>
+        <li>
+          <div class="tl-time">17:00 – 17:30</div>
+          <div class="tl-body">
+            <h4>抽奖 &amp; 自由交流</h4>
+            <p>限量周边抽奖，以及我们为所有人准备的伴手礼。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ GUESTS ============ -->
+  <section class="section" id="guests">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Guests</div>
+        <h2 class="section-title">你会见到谁</h2>
+        <p class="section-sub">以下嘉宾名单持续更新，最终以现场为准。</p>
+      </div>
+
+      <div class="cards-4">
+        <article class="guest">
+          <div class="avatar g-1">LH</div>
+          <h4>李航</h4>
+          <p class="role">TRAE 产品负责人</p>
+          <p class="desc">五年 AI 产品经验，坚信好的工具应该藏在背后。</p>
+        </article>
+        <article class="guest">
+          <div class="avatar g-2">YM</div>
+          <h4>叶敏</h4>
+          <p class="role">TRAE 设计负责人</p>
+          <p class="desc">关注开发者体验，喜欢把复杂的交互做轻。</p>
+        </article>
+        <article class="guest">
+          <div class="avatar g-3">WJ</div>
+          <h4>王君</h4>
+          <p class="role">TRAE 工程负责人</p>
+          <p class="desc">把 LLM 变成稳定生产力的幕后推手。</p>
+        </article>
+        <article class="guest guest-soon">
+          <div class="avatar g-4">+</div>
+          <h4>更多嘉宾</h4>
+          <p class="role">敬请期待</p>
+          <p class="desc">社区分享者仍在征集中，想上台欢迎联系我们。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REGISTER ============ -->
+  <section class="section section-form" id="register">
+    <div class="container form-wrap">
+      <div class="form-intro">
+        <div class="eyebrow">Register</div>
+        <h2 class="section-title">留下你的信息，<br/>我们在现场等你</h2>
+        <p class="section-sub">
+          报名完全免费。为了给大家更好的体验，我们会做简单的审核，
+          通过后将在活动前 3–5 天发送确认邮件和详细地址。
+        </p>
+        <ul class="chips">
+          <li>🧑‍💻 开发者</li>
+          <li>🎨 设计师</li>
+          <li>🚀 创业者</li>
+          <li>✨ 好奇心旺盛的朋友</li>
+        </ul>
+      </div>
+
+      <form class="form" id="rsvp" novalidate>
+        <div class="field">
+          <label for="name">姓名 <span class="req">*</span></label>
+          <input id="name" name="name" type="text" placeholder="怎么称呼你都好" required maxlength="30" autocomplete="name" />
+          <small class="err" data-for="name"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">邮箱 <span class="req">*</span></label>
+          <input id="email" name="email" type="email" placeholder="用于接收报名确认" required autocomplete="email" />
+          <small class="err" data-for="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="wechat">微信号（可选）</label>
+          <input id="wechat" name="wechat" type="text" placeholder="方便我们拉活动群" autocomplete="nickname" />
+        </div>
+
+        <div class="field">
+          <label for="role">你的身份 <span class="req">*</span></label>
+          <select id="role" name="role" required>
+            <option value="">请选择</option>
+            <option>前端 / 客户端开发者</option>
+            <option>后端 / 全栈开发者</option>
+            <option>设计师 / 产品经理</option>
+            <option>学生 / 研究者</option>
+            <option>创业者 / 独立开发者</option>
+            <option>其他</option>
+          </select>
+          <small class="err" data-for="role"></small>
+        </div>
+
+        <div class="field">
+          <label>你最期待聊的话题（可多选）</label>
+          <div class="checks">
+            <label><input type="checkbox" name="topics" value="新功能抢先看" /> 新功能抢先看</label>
+            <label><input type="checkbox" name="topics" value="真实团队落地案例" /> 真实团队落地案例</label>
+            <label><input type="checkbox" name="topics" value="Prompt / Rule 技巧" /> Prompt / Rule 技巧</label>
+            <label><input type="checkbox" name="topics" value="AI 编程职业发展" /> AI 编程职业发展</label>
+            <label><input type="checkbox" name="topics" value="吐槽 &amp; 建议" /> 吐槽 &amp; 建议</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">想对 TRAE 团队说的（可选）</label>
+          <textarea id="message" name="message" rows="3" placeholder="任何你想说的都可以写在这里…" maxlength="300"></textarea>
+          <div class="count"><span data-count>0</span>/300</div>
+        </div>
+
+        <label class="agree">
+          <input type="checkbox" name="agree" required />
+          <span>我已阅读并同意活动期间的 <a href="#" target="_blank">行为准则</a> 与 <a href="#" target="_blank">隐私说明</a>。</span>
+          <small class="err" data-for="agree"></small>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submit">
+          <span class="btn-text">提交报名</span>
+          <span class="btn-loader" aria-hidden="true"></span>
+        </button>
+
+        <p class="form-foot">提交后你会看到成功提示，邮箱同时会收到回执邮件。</p>
+      </form>
+    </div>
+
+    <!-- Success overlay -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <div class="toast-inner">
+        <div class="toast-ico">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div>
+          <strong>报名已收到 ✨</strong>
+          <p>我们会在 1–2 个工作日内通过邮件与你确认。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-alt" id="faq">
+    <div class="container narrow">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="section-title">常见问题</h2>
+      </div>
+
+      <details class="faq">
+        <summary>活动收费吗？名额有限吗？<span aria-hidden="true">+</span></summary>
+        <p>完全免费。场地有限，我们计划开放 80 个席位，并根据报名信息做简单审核，优先通过经常在社区活跃、或有真实使用故事的朋友。</p>
+      </details>
+
+      <details class="faq">
+        <summary>我一定要带电脑去吗？<span aria-hidden="true">+</span></summary>
+        <p>不强制。如果你希望现场演示一个自己用 TRAE 做的小项目，带电脑会更方便，我们也会预留插座和投影。</p>
+      </details>
+
+      <details class="faq">
+        <summary>会提供回放或录播吗？<span aria-hidden="true">+</span></summary>
+        <p>圆桌部分我们会做内部录音用于整理 QA 纪要；Lightning Talks 视分享者意愿再决定是否剪辑发布。现场氛围优先。</p>
+      </details>
+
+      <details class="faq">
+        <summary>我想上台做一个 10 分钟分享，怎么联系？<span aria-hidden="true">+</span></summary>
+        <p>在报名表单最后一栏告诉我们你的主题即可，我们会单独联系你。话题不限，真实最重要。</p>
+      </details>
+
+      <details class="faq">
+        <summary>我在外地，报名后可以线上参加吗？<span aria-hidden="true">+</span></summary>
+        <p>这次是线下小聚，暂不开放线上通道。我们会考虑在其他城市做巡回，如果你愿意当城市组织者，欢迎联系我们。</p>
+      </details>
+
+      <details class="faq">
+        <summary>我的信息会被怎么使用？<span aria-hidden="true">+</span></summary>
+        <p>仅用于本次活动的报名审核、签到和联系。活动结束后 30 天内我们会删除除必要工商留存外的所有信息，不会用于任何营销。</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta">
+    <div class="container">
+      <h2>期待见到你</h2>
+      <p>有任何问题都可以发邮件到 <a href="mailto:friends@trae.ai">friends@trae.ai</a></p>
+      <a class="btn btn-primary" href="#register">再看一眼报名 →</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand brand--small">
+          <span class="brand-text">TRAE <em>Friends</em></span>
+        </div>
+        <p class="foot-note">© 2026 TRAE. 保持好奇，一起创造。</p>
+      </div>
+      <div class="foot-links">
+        <a href="#about">关于</a>
+        <a href="#agenda">议程</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:friends@trae.ai">联系我们</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
